@@ -86,19 +86,12 @@
 <body>
   <div class="modal">
     <h2>수료증 정보</h2>
-    <div class="info-line"><span class="label">수료번호</span>: <span id="certNum">로딩 중...</span></div>
-    <div class="info-line"><span class="label">강좌명</span>: <span id="courseName">로딩 중...</span></div>
-    <div class="info-line"><span class="label">성명</span>: <span id="userName">로딩 중...</span></div>
+    <div class="info-line"><span class="label">수료번호</span>: 24120912387N1574314</div>
+    <div class="info-line"><span class="label">강좌명</span>: 아동학대 신고의무자 및 공공부문 종사자 아동학대 예방교육(공통편)</div>
+    <div class="info-line"><span class="label">성명</span>: 임연우</div>
     <div class="button">
       <button onclick="alert('확인되었습니다')">확인</button>
     </div>
   </div>
-
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    document.getElementById("certNum").textContent = params.get("cert") || "미입력";
-    document.getElementById("courseName").textContent = params.get("course") || "미입력";
-    document.getElementById("userName").textContent = params.get("name") || "미입력";
-  </script>
 </body>
 </html>
