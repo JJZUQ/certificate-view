@@ -1,64 +1,94 @@
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>수료증 정보</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
     body {
       margin: 0;
       padding: 0;
       background-color: #5a5a5a;
-      font-family: "Noto Sans KR", sans-serif;
+      font-family: 'Noto Sans KR', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
+
     .modal {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: white;
-      border-radius: 10px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
       width: 90%;
-      max-width: 400px;
-      padding: 30px 20px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      text-align: left;
+      max-width: 600px;
+      padding: 30px 40px;
     }
+
     .modal h2 {
-      font-size: 1.2rem;
-      font-weight: bold;
+      font-size: 1.3rem;
+      font-weight: 700;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
       margin-bottom: 20px;
     }
-    .modal p {
-      margin: 5px 0;
-      font-size: 0.95rem;
-      color: #333;
+
+    .modal .info-line {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 12px;
+      font-size: 1rem;
     }
-    .modal .label {
+
+    .label {
       font-weight: bold;
-      display: inline-block;
-      width: 70px;
+      width: 80px;
     }
+
     .modal .button {
-      margin-top: 25px;
       text-align: center;
+      margin-top: 30px;
     }
+
     .modal button {
       background-color: #3b6ef6;
       color: white;
       border: none;
-      padding: 10px 30px;
-      border-radius: 20px;
+      padding: 12px 50px;
+      border-radius: 30px;
       font-size: 1rem;
       cursor: pointer;
+    }
+
+    @media screen and (max-width: 480px) {
+      .modal {
+        padding: 20px;
+      }
+
+      .modal h2 {
+        font-size: 1.1rem;
+      }
+
+      .modal .info-line {
+        font-size: 0.9rem;
+        flex-direction: column;
+      }
+
+      .label {
+        width: auto;
+        margin-bottom: 4px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="modal">
     <h2>수료증 정보</h2>
-    <p><span class="label">수료번호</span>: 24120912387N1574314</p>
-    <p><span class="label">강좌명</span>: 아동학대 신고의무자 및 공공부문 종사자 아동학대 예방교육(공통편)</p>
-    <p><span class="label">성명</span>: 임연우</p>
+    <div class="info-line"><span class="label">수료번호</span>: 24120912387N1574314</div>
+    <div class="info-line"><span class="label">강좌명</span>: 아동학대 신고의무자 및 공공부문 종사자 아동학대 예방교육(공통편)</div>
+    <div class="info-line"><span class="label">성명</span>: 임연우</div>
     <div class="button">
       <button onclick="alert('확인되었습니다')">확인</button>
     </div>
