@@ -1,0 +1,67 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수료증 정보</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #5a5a5a;
+      font-family: "Noto Sans KR", sans-serif;
+    }
+    .modal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    .modal h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .modal p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+      color: #333;
+    }
+    .modal .label {
+      font-weight: bold;
+      display: inline-block;
+      width: 70px;
+    }
+    .modal .button {
+      margin-top: 25px;
+      text-align: center;
+    }
+    .modal button {
+      background-color: #3b6ef6;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="modal">
+    <h2>수료증 정보</h2>
+    <p><span class="label">수료번호</span>: 24120912387N1574314</p>
+    <p><span class="label">강좌명</span>: 아동학대 신고의무자 및 공공부문 종사자 아동학대 예방교육(공통편)</p>
+    <p><span class="label">성명</span>: 임연우</p>
+    <div class="button">
+      <button onclick="alert('확인되었습니다')">확인</button>
+    </div>
+  </div>
+</body>
+</html>
